@@ -849,10 +849,9 @@ body.offcanvas {
   .colorlib-feature .colorlib-text {
     padding-left: 120px;
     width: 100%; }
-.colorlib-feature .colorlib-text-add {
+  .colorlib-feature .colorlib-text-add {
         padding-left: 120px;
-    width: 100%;
-}
+    width: 100%; }
     .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
       margin: 0;
       padding: 0; }
