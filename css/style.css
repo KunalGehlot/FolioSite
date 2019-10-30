@@ -34,10 +34,6 @@ a {
 p {
   margin-bottom: 1.5em; }
 
-.mycustomP{
-    margin-bottom: 0 !important;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
@@ -849,9 +845,6 @@ body.offcanvas {
   .colorlib-feature .colorlib-text {
     padding-left: 120px;
     width: 100%; }
-  .colorlib-feature .colorlib-text-add {
-        padding-left: 120px;
-    width: 100%; }
     .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
       margin: 0;
       padding: 0; }
@@ -864,8 +857,6 @@ body.offcanvas {
       text-transform: uppercase; }
   .colorlib-feature.colorlib-feature-sm .colorlib-text {
     margin-top: 30px; }
-  .colorlib-feature.colorlib-feature-sm .colorlib-text-add {
-    margin-top: 8px; }
   .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
     color: #2c98f0;
     font-size: 40px; }
