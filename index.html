@@ -650,59 +650,121 @@
 							<h2 class="colorlib-heading animate-box">Recent Work</h2>
 						</div>
 					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active">Machine Learning</a></span> <span><a href="#">Arduino</a></span> <span><a href="#">RaspberryPi</a></span> <span><a href="#">Others</a></span></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
-										<span>Website</span>
-										<p class="icon">
-<!--
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
--->
-										</p>
+					<div class="tab row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+							<button class="tablinks" onclick="openCity(event, 'ML')">ML</button>
+							<button class="tablinks" onclick="openCity(event, 'AI')">AI</button>
+							<button class="tablinks" onclick="openCity(event, 'Code')">Code</button>
+						  </div>
+						  
+						  <div id="ML" class="tabcontent">
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="project" style="background-image: url(images/img-1.jpg);">
+											<div class="desc">
+												<div class="con">
+													<h3><a href="work.html">Work 01</a></h3>
+													<span>Website</span>
+													<p class="icon">
+													</p>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 02</a></h3>
-										<span>Animation</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
+						  </div>
+						  
+						  <div id="AI" class="tabcontent">
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="project" style="background-image: url(images/img-2.jpg);">
+											<div class="desc">
+												<div class="con">
+													<h3><a href="work.html">Work 02</a></h3>
+													<span>Animation</span>
+													<p class="icon">
+														<span><a href="#"><i class="icon-share3"></i></a></span>
+														<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+														<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+													</p>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/img-3.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 03</a></h3>
-										<span>Illustration</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
+						  </div>
+						  
+						  <div id="Code" class="tabcontent">
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+										<div class="project" style="background-image: url(images/img-3.jpg);">
+											<div class="desc">
+												<div class="con">
+													<h3><a href="work.html">Work 03</a></h3>
+													<span>Illustration</span>
+													<p class="icon">
+														<span><a href="#"><i class="icon-share3"></i></a></span>
+														<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+														<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+													</p>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
+						  </div>
+						  <script>
+								function openCity(evt, cityName) {
+								  var i, tabcontent, tablinks;
+								  tabcontent = document.getElementsByClassName("tabcontent");
+								  for (i = 0; i < tabcontent.length; i++) {
+									tabcontent[i].style.display = "none";
+								  }
+								  tablinks = document.getElementsByClassName("tablinks");
+								  for (i = 0; i < tablinks.length; i++) {
+									tablinks[i].className = tablinks[i].className.replace(" active", "");
+								  }
+								  document.getElementById(cityName).style.display = "block";
+								  evt.currentTarget.className += " active";
+								}
+								</script>
+								   <style>
+										body {font-family: Arial;}
+										
+										/* Style the tab */
+										.tab {
+										  overflow: hidden;
+										  border: 1px solid #fff;
+										  background-color: #fff;
+										}
+										
+										/* Style the buttons inside the tab */
+										.tab button {
+										  background-color: inherit;
+										  float: left;
+										  border: none;
+										  outline: none;
+										  cursor: pointer;
+										  padding: 14px 16px;
+										  transition: 0.3s;
+										  font-size: 17px;
+										}
+										
+										/* Change background color of buttons on hover */
+										.tab button:hover {
+										  background-color: #ddd;
+										}
+										
+										/* Create an active/current tablink class */
+										.tab button.active {
+										  background-color: #ccc;
+										}
+										
+										/* Style the tab content */
+										.tabcontent {
+										  display: none;
+										  padding: 6px 12px;
+										  border: 1px solid #ccc;
+										  border-top: none;
+										}
+										</style>
+					<!-- <div class="row">
+						
+						
+					
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
 							<div class="project" style="background-image: url(images/img-4.jpg);">
 								<div class="desc">
@@ -748,7 +810,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="row">
 						<div class="col-md-12 animate-box">
 							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
