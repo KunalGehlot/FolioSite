@@ -2065,3 +2065,9 @@ body.offcanvas .colorlib-nav-toggle {
 .bluetext{
     color: #2c98f0;
 }
+
+.workIcons{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
