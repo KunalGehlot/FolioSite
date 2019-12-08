@@ -673,7 +673,7 @@
                             </div>
                         </div>
                         <div class="tab row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                            <button class="tablinks" onclick="openCity(event, 'ML')">Machine Learning</button>
+                            <button class="tablinks bluetext" onclick="openCity(event, 'ML')">Machine Learning</button>
                             <button class="tablinks" onclick="openCity(event, 'Ard')">Arduino</button>
                             <button class="tablinks" onclick="openCity(event, 'Code')">Raspberry Pi</button>
                         </div>
@@ -847,6 +847,7 @@
                                 tablinks = document.getElementsByClassName("tablinks");
                                 for (i = 0; i < tablinks.length; i++) {
                                     tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                    tablinks[i].className = tablinks[i].className.replace(" bluetext", "");
                                 }
                                 document.getElementById(cityName).style.display = "block";
                                 evt.currentTarget.className += " active";
