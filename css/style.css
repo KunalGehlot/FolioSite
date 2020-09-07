@@ -534,8 +534,10 @@ ol {
 }
 
 .resume-list img {
-    float: left;
     text-align: justify;
+    /* transform: translateX(%); */
+    float: left;
+    top: 50%;
     /*    padding-right: 10px;*/
 }
 
