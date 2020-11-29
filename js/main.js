@@ -78,6 +78,10 @@ $(window).on('load', function () {
 
 })(jQuery);
 
+
+/*------------------
+    Skill Percentage Logic
+------------------*/
 function progress1(){
     if ($().circleProgress) {
         //Set progress circle 1
@@ -262,4 +266,48 @@ function check_in_view(){
 
 $(window).on('scroll resize',check_in_view);
 $(window).trigger('scroll');
+
+/*---------------------
+    END SKILL PERCENTAGE LOGIC
+---------------------*/
+
+/*-------------------------------
+Contact Form Confirmation Logic
+var toggle=false;
+$('.site-btn').click(()=>{
+    toggle=!toggle;
+    if(toggle){
+        $('.card').addClass('sent-class');
+        f();
+        setTimeout(function f(){},200);
+    }
+})
+    End
+-------------------------*/
+
+
+
+/*------------------------
+    Show More Protfolio Logic
+------------------------*/
+$('.show-more').on('click',()=>{
+    console.log(12)
+    if($('.more').css('display')=="none"){
+        $('.more').css('display','inline');
+        $('.more').css('opacity','1');
+        //$(window).scrollTop($('.more').position().top-100);
+        $('html,body').animate({
+            scrollTop:$('.more').position().top-100
+        },500);
+        $('.show-more').text('SEE LESS');
+    }
+    else{
+        $('.more').css('display','none');
+        $('.more').css('opacity','0');
+        $('.show-more').text('SEE MORE');
+    }
+})
+/*-------------
+ END
+--------------*/
 
