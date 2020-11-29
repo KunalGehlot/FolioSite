@@ -92,6 +92,17 @@ function progress1(){
             },
             emptyFill: "rgba(0, 0, 0, 0)"
         });
+        var $per=$('#percentage1');
+        var n=Number($per.text());
+        for(var i=0;i<=n;i++){
+            task(i,$per);
+        }
+        function task(i,$per) { 
+            setTimeout(function() { 
+                //console.log(i);
+                $per.text(i); 
+            }, 20 * i); 
+        }
     }
 }
 function progress2(){
@@ -108,6 +119,17 @@ function progress2(){
             },
             emptyFill: "rgba(0, 0, 0, 0)"
         });
+        var $per=$('#percentage2');
+        var n=Number($per.text());
+        for(var i=0;i<=n;i++){
+            task(i,$per);
+        }
+        function task(i,$per) { 
+            setTimeout(function() { 
+                //console.log(i);
+                $per.text(i); 
+            }, 20 * i); 
+        }
     }
 }
 function progress3(){
@@ -124,6 +146,17 @@ function progress3(){
             },
             emptyFill: "rgba(0, 0, 0, 0)"
         });
+        var $per=$('#percentage3');
+        var n=Number($per.text());
+        for(var i=0;i<=n;i++){
+            task(i,$per);
+        }
+        function task(i,$per) { 
+            setTimeout(function() { 
+                //console.log(i);
+                $per.text(i); 
+            }, 20 * i); 
+        }
     }
 }
 function progress4(){
@@ -140,8 +173,20 @@ function progress4(){
             },
             emptyFill: "rgba(0, 0, 0, 0)"
         });
+        var $per=$('#percentage4');
+        var n=Number($per.text());
+        for(var i=0;i<=n;i++){
+            task(i,$per);
+        }
+        function task(i,$per) { 
+            setTimeout(function() { 
+                //console.log(i);
+                $per.text(i); 
+            }, 20 * i); 
+        }
     }
 }
+/*
 function progress5(){
     if ($().circleProgress) {
         //Set progress circle skyblue
@@ -176,6 +221,8 @@ function progress6(){
     }
 }
 
+This doesn't exist inindex.html
+*/
 function progress(index){
     //console.log(index);
     switch(index){
@@ -183,8 +230,6 @@ function progress(index){
         case 2: progress2();break;
         case 3: progress3();break;
         case 4: progress4();break;
-        case 5: progress5();break;
-        case 6: progress6();break;
         default:break;
     }
 }
@@ -217,6 +262,4 @@ function check_in_view(){
 
 $(window).on('scroll resize',check_in_view);
 $(window).trigger('scroll');
-
-
 
